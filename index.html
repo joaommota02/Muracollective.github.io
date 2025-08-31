@@ -20,23 +20,23 @@
       letter-spacing: -0.2px;
     }
     h1 {
-      font-size: 1.6rem; /* Bigger title */
+      font-size: 1.6rem; 
       margin: 0;
       font-weight: 300;
       text-transform: lowercase;
     }
     p {
-      font-size: 1.1rem; /* Slightly bigger subtitle */
+      font-size: 1.1rem; 
       margin: 10px 0 20px;
       color: #aaa;
       text-transform: lowercase;
     }
     .handles {
-      font-size: 0.7rem; /* Small Instagram handles */
+      font-size: 0.7rem; 
       color: #777;
       display: flex;
-      flex-direction: column; /* Stack vertically */
-      gap: 6px; /* Space between handles */
+      flex-direction: column; 
+      gap: 6px; 
     }
     .handles a {
       text-decoration: none;
@@ -45,9 +45,29 @@
     .handles a:hover {
       text-decoration: underline;
     }
+    .logo {
+      margin-bottom: 20px;
+    }
+    .logo svg {
+      display: block;
+      margin: 0 auto;
+    }
   </style>
 </head>
 <body>
+  <!-- Logo cadeira minimalista -->
+  <div class="logo">
+    <svg width="90" height="90" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <!-- Pernas -->
+      <line x1="30" y1="50" x2="30" y2="85" stroke="white" stroke-width="4" stroke-linecap="round"/>
+      <line x1="70" y1="50" x2="70" y2="85" stroke="white" stroke-width="4" stroke-linecap="round"/>
+      <!-- Assento -->
+      <line x1="30" y1="50" x2="70" y2="50" stroke="white" stroke-width="4" stroke-linecap="round"/>
+      <!-- Encosto com arco inspirado na Ponte Luís I -->
+      <path d="M30 50 Q50 10 70 50" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
+    </svg>
+  </div>
+
   <h1>mura collective</h1>
   <p>coming soon</p>
   <div class="handles">
@@ -56,5 +76,6 @@
   </div>
 </body>
 </html>
+
 
 
